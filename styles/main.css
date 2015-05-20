@@ -6,9 +6,6 @@ html {
 *::before {
   box-sizing: inherit; }
 
-* {
-  border: 1px solid purple; }
-
 body {
   background: #f5f5f1; }
 
@@ -17,34 +14,19 @@ body {
   margin: 20px auto;
   background-color: #f5f5f1; }
 
-section {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  section::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section .content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    section .content:last-child {
-      margin-right: 0; }
-  section .sidebar {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    height: 245px;
-    width: 520px; }
-    section .sidebar:last-child {
-      margin-right: 0; }
-  section aside {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    section aside:last-child {
-      margin-right: 0; }
+.aside {
+  height: 420px;
+  width: 224px;
+  border: 1px solid #E1E3DF; }
+
+.items {
+  height: 170px;
+  width: 214px; }
+
+#colorbox {
+  width: 194px;
+  height: 80px; }
+
+#boxes {
+  height: 20px;
+  width: 20px; }
