@@ -1,47 +1,193 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Etsy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/vendor/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
+    <title>Etsy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/vendor/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-
-<div class="container">
-
-  <section>
-    <div class="content">
-      <h2>Hello World</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="container">
+        <header>
+            <div id="headerbox">
+                <div id="logo">
+                    <a href="logo"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png" title="" class="etsylogo" alt="Etsy Logo"></a>
+                </div>
+                <nav>
+                    <nav id="nav-link"></nav>
+                    <nav id="nav-icon"></nav>
+                    <form action="" method="post">
+                        <fieldset>
+                            <label for="searchbox"> </label>
+                            <input type="text" id="searchbox" textarea placeholder="Search for items or shops">
+                            <input class="button" type="submit" value="Search">
+                            <label for="browse">Browse</label>
+                            <select name="Browse">
+                                <optgroup label="Browse">
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
+                    </form>
+                </nav>
+                </nav>
+                </nav>
+            </div>
+        </header>
+        </header>
+        <sidebar>
+            <aside>
+                <section class="Item Type">
+                    <fieldset>
+                        <label for="Item Type">Item Type</label>
+                        <ul type="none">
+                            <li>
+                                <input type="radio" value="All Items">All Items</li>
+                            <li>
+                                <input type="radio" value="Hand Made">Hand Made</li>
+                            <li>
+                                <input type="radio" value="Vintage">Vintage</li>
+                            <li>
+                                <input type="radio" value="Craft Supplies">Craft Supplies</li>
+                        </ul>
+                    </fieldset>
+                </section>
+                <!-- <hr>
+                <section class="Categories">
+                    <h4>Categories</h4>
+                    <h4>Handmade</h4>
+                    <ul type="none">
+                        <li><a href="#Art">Art</a></li>
+                        <li><a href="#Jewelry">Jewelry</a></li>
+                        <li><a href="#Music">Music</a></li>
+                        <li><a href="#Paper Goods">Paper Goods</a></li>
+                        <li><a href="#Accessories">Accessories</a></li>
+                        <li><a href="#Cloting">Clothing</a></li>
+                        <li><a href="#Housewares">Housewares</a></li>
+                        <li><a href="#Children">Children</a></li>
+                    </ul>
+                    <h4>Vintage</h4>
+                    <ul type="none">
+                        <li><a href="#Collectibles">Collectibles</a></li>
+                        <li><a href="#Home Decor">Home Decor</a></li>
+                        <li><a href="#Jewlery">Jewelry</a></li>
+                        <li><a href="#Paper Ephemera">Paper Ephemera</a></li>
+                    </ul>
+                    <h4>Craft Supplies</h4>
+                    <ul type="none">
+                        <li><a href="#Commercial">Commercial</a></li>
+                        <li><a href="#Scrapbooking">Scrapbooking</a></li>
+                        <li><a href="#Fabic">Fabric</a></li>
+                        <li><a href="#Bead">Bead</a></li>
+                    </ul>
+                    <hr>
+                    <section class="Price Filter">Price Filter</section>
+                    <input type="text" textarea placeholder="$min">
+                    </textarea>to
+                    <input type="text" textarea placeholder="$max">
+                    </textarea>
+                    <hr>
+                    <section class="Filter by Color" <h4>
+                        <label for="checkboxes">Filter by Color</label>
+                        </h4>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="red">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="orange">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="yellow">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="green">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="blue">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="purple">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="black">
+                        </label>
+                        <label>
+                            <input class="checkbox" name="colorbox" type="checkbox" value="white">
+                        </label>
+                    </section>
+                    <hr>
+                    <section class="Ordering Options" <h4>
+                        <label for="checkboxes">Ordering Options</label>
+                        </h4>
+                        <ul type="none">
+                            <li>
+                                <label>
+                                    <input class="checkbox" name="checkbox" type="checkbox" value="In Your Favorites">
+                                </label> In Your Favorites</li>
+                            <li>
+                                <label>
+                                    <input class="checkbox" name="checkbox" type="checkbox" value="Accepts Etsy Gift Cards">
+                                </label> Accepts Etsy Gift Cards</li>
+                            <li>
+                                <label>
+                                    <input class="checkbox" name="checlbox" type="checkbox" value="Customizable"> Customizable</label>
+                            </li>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="Shop Location" <h4>Shop Location</h4>
+                        <ul type="none">
+                            <li>
+                                <input type="radio" name="location" value="Anywhere" />Anywhere</li>
+                            <li>
+                                <input type="radio" name="location" value="United States" />United States</li>
+                            <span>Choose a custom location</span>
+                        </ul>
+                    </section>
+                    <hr>
+                    <section class="Ships To" <h6>Ships To</h6>
+                        <textarea placeholder="Choose country...">Choose country...</textarea>
+                        <datalist id="countries">
+                            <option value="country name"></option>
+                            <option value="country name"></option>
+                            <option value="country name"></option>
+                            <option value="country name"></option>
+                            <option value="country name"></option>
+                            <option value="country name"></option>
+                        </datalist>
+                    </section>
     </div>
-
-    <div class="sidebar">
-      <ul>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link One</a></li>
-        <li><a href="#">Link One</a></li>
-      </ul>
     </div>
+    </div>
+    </fieldset>
+    </div>
+    </section>
+    </aside>
+    </sidebar> -->
+    <!-- <section>
+        <div class="content">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="sidebar">
 
-  </section>
-
-</div>
-
-
-
-
-
-  <script src="scripts/vendor/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
-
+            <ul>
+                <li><a href="#">Link One</a></li>
+                <li><a href="#">Link One</a></li>
+                <li><a href="#">Link One</a></li>
+                <li><a href="#">Link One</a></li>
+                <li><a href="#">Link One</a></li>
+                <li><a href="#">Link One</a></li>
+            </ul>
+        </div>
+    </section>
+    </div> -->
+    <script src="scripts/vendor/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

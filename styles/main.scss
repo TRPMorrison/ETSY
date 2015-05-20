@@ -1,20 +1,74 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
+// * {
+//     border: 1px solid purple;
+// }
+
+body {
+    background: #f5f5f1;
+}
 
 .container {
-  width: 1080px;
-  margin: 50px auto;
+    width: 1080px;
+    margin: 20px auto;
+    background-color: #f5f5f1;
 }
 
-section {
-  @include outer-container();
+.sidebar {
+    @include outer-container();
+    .content {
+        @include span-columns(8);
+    }
+    .aside {
+        @include span-columns(2);
+        height: 420px;
+        width: 224px;
+        border: 1px solid #E1E3DF;
+    }
+//     aside {
+//         @include span-columns(2);
+//         font color: #54ACC7;
+//         background: #FFFFFF;
+//         display: block;
+//         float: left;
+//         width: 224px;
+//         text-align: left;
+//         border: 1px solid #E1E3DF;
+//     }
+// }
 
-  .content {
-    @include span-columns(8);
-  }
+// aside {
+//     font color: #54ACC7;
+//     background: #FFFFFF;
+//     display: block;
+//     float: left;
+//     width: 224px;
+//     text-align: left;
+//     border: 1px solid #E1E3DF;
+// }
 
-  .sidebar {
-    @include span-columns(4);
-  }
-
+.items {
+    height: 170px;
+    width: 214px;
 }
+
+#colorbox {
+    width: 194px;
+    height: 80px;
+}
+
+#boxes {
+    height: 20px;
+    width: 20px;
+}
+
+// #boxes {
+//     boxred: #F40B32;
+//     boxorange: #FF7F00;
+//     boxyellow: #F3CC0C;
+//     boxgreen: #0AC20A;
+//     boxblue: #0CCCF3;
+//     boxpurple: #A60CF3;
+//     boxblack: #000000;
+//     boxwhite: #FFFFFF;
+// }
