@@ -64,24 +64,25 @@ fieldset .headright {
   background: #FFF;
   float: left;
   position: absolute;
-  margin-left: 70px;
+  margin-left: 40px;
   display: block;
   padding-left: 20px;
   padding-right: 20px; }
 
 .sidebar {
-  margin-left: 100px;
+  margin-left: 40px;
   height: 408px;
   width: 245px;
   color: #54ACC7;
   background: #FFF;
   display: block;
   float: left;
-  text-align: left;
-  font-size: 14px; }
+  text-align: center;
+  font-size: 14px;
+  position: absolute; }
 
 aside {
-  margin-left: 100px;
+  margin-left: 40px;
   height: 655px;
   width: 245px;
   color: #54ACC7;
@@ -89,7 +90,9 @@ aside {
   display: block;
   float: left;
   border: 1px solid #E1E3DF;
-  font-size: 14px; }
+  font-size: 14px;
+  position: relative;
+  text-align: center; }
 
 h4 {
   font: bold;
