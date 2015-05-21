@@ -26,7 +26,7 @@
 <option value="4">Option 4</option>
 <option value="5">Option 5</option>
 <option value="6">Option 6</option>
-<!-- </optgroup> -->
+</optgroup>
 </select>
 
 
@@ -34,11 +34,10 @@
 <a href="Register">Register</a>
 <button>Sign In</button>
 <img src="https://raw.githubusercontent.com/tiy-atl-js-q2-2015/Assignments/master/Assignment%2010%20*/assets/cart.png">Cart</div>
-</fieldset>
 </form>
 </header>
 
-<sidebar>
+<!--
 <section class="Item Type">
 <fieldset><label for="Item Type">Item Type</label>
 <ul type="none">
@@ -49,7 +48,11 @@
 </ul>
 </fieldset>
 </section>
+-->
+
 <hr>
+
+<sidebar>
 <section class="Categories">
 <h4>Categories</h4>
 <h4>Handmade</h4>
@@ -77,41 +80,56 @@
 <li><a href="#Fabic">Fabric</a></li>
 <li><a href="#Bead">Bead</a></li>
 </ul>
+</section>
+
 <hr>
-<section class="Price Filter">Price Filter</section>
-<input placeholder="$min" type="text"> to <input placeholder="$max" type="text">
+
+<aside>
+<div class="price">Price Filter</section>
+<input placeholder="$min" type="text"> to <input placeholder="$max" type="text"></div>
+
 <hr>
-<section class="Filter by Color">
+
+<div class="color">
 <h4><label for="checkboxes">Filter by Color</label></h4>
-<label><input class="checkbox" name="colorbox" type="checkbox" value="red"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="orange"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="yellow"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="green"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="blue"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="purple"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="black"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="white"></label></section>
+<label><input class="checkbox" name="colorbox" type="checkbox" value="red"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="orange"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="yellow"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="green"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="blue"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="purple"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="black"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="white"></label></div>
+
 <hr>
-<section class="Ordering Options">
+
+<div class="ordering">
 <h4><label for="checkboxes">Ordering Options</label></h4>
 <ul type="none">
 <li><label><input class="checkbox" name="checkbox" type="checkbox" value="In Your Favorites"></label> In Your Favorites</li>
 <li><label><input class="checkbox" name="checkbox" type="checkbox" value="Accepts Etsy Gift Cards"></label> Accepts Etsy Gift Cards</li>
 <li><label><input class="checkbox" name="checkbox" type="checkbox" value="Customizable"> Customizable</label></li>
 </ul>
-</section>
+</div>
+
 <hr>
-<section class="Shop Location">
+
+
+<div class="location">
 <h4>Shop Location</h4>
 <ul type="none">
 <li><input name="location" type="radio" value="Anywhere">Anywhere</li>
 <li><input name="location" type="radio" value="United States">United States</li>
 <li style="list-style: none"><span>Choose a custom location</span></li>
 </ul>
-</section>
+</div>
+
 <hr>
-<section class="Ships To">
+
+<div class="shipping">
 <h6>Ships To</h6>
 <textarea placeholder="Choose country...">
 Choose country...
 </textarea>
- <datalist id="countries"></datalist></section>
-</section>
+ <datalist id="countries"></datalist>
 </div>
-<section>
+</aside>
+
+
+<!-- TIM'S NEWAPP TEMPLATE PLACEHOLDER <section>
 <div class="content">
 <h2>Hello World</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -126,7 +144,7 @@ Choose country...
 <li><a href="#">Link One</a></li>
 </ul>
 </div>
-</section>
+</section> -->
 <script src="scripts/vendor/jquery.min.js"></script> <script src="scripts/main.js"></script>
 </body>
 </html>

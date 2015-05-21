@@ -1,9 +1,9 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
 
-* {
-  border:.5px solid purple;
-}
+// * {
+//   border:1px solid purple;
+// }
 
 body {
   background:#f5f5f1;
@@ -22,25 +22,33 @@ header {
 }
 
 form {
-  margin-left: 80px;
-  display: inline;
+  margin-left:80px;
+  display:inline
 }
 
 label .submit {
-  width: 78.7188px;
-  height: 34px;
-  background-color: #45ADC5;
-  font-color: white;
+  width:78.7188px;
+  height:34px;
+  background-color:#45ADC5;
+  color:#fff
 }
 
 label .searchbox {
-  width: 229px;
-  height: 34px;
-  border: 1px solid #FBFBFA;
+  width:229px;
+  height:34px;
+  border:1px solid #FBFBFA
 }
+
 .headright button {
-width: 61.5938px;
-height: 34px;
+  width:61.5938px;
+  height:34px;
+  padding-right:50px;
+  padding-left:50px
+}
+
+.headright a {
+  padding-right:50px;
+  padding-left:50px
 }
 
 fieldset .logo {
@@ -58,26 +66,25 @@ fieldset .headright {
 }
 
 .sidebar {
+  margin-left: 30px;
   height:420px;
   width:224px;
   border:1px solid #E1E3DF;
-  font-color:#54ACC7;
+  color:#54ACC7;
   background:#FFF;
   display:block;
   float:left;
-  width:224px;
-  text-align:left;
-  border:1px solid #E1E3DF
+  text-align:left
 }
 
 aside {
+  margin-left: 100px;
   height:420px;
   width:224px;
-  font-color:#54ACC7;
+  color:#54ACC7;
   background:#FFF;
   display:block;
   float:left;
-  width:224px;
   border:1px solid #E1E3DF
 }
 
