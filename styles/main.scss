@@ -1,326 +1,296 @@
-body {
-  background:#f5f5f1
-}
-
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
 .container {
-  width:100%;
-  height:100%
+    width: 1000px;
+    margin: 50px auto;
 }
 
-header {
-  background:#FFF;
-  margin-top:0;
-  overflow:hidden;
-  width:100%;
-  height:80px
-}
+section {
+    @include outer-container();
+    .content {
+        @include span-columns(8);
+    }
+    .sidebar {
+        @include span-columns(4);
+    }
+    body {
+        background: #f5f5f1
+    }
+    // .container {
+    //   width:100%;
+    //   height:100%
+    // }
+    header {
+        background: #FFF;
+        margin-top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 80px
+    }
+    form {
+        margin-left: 100px;
+        display: inline
+    }
+    label .submit {
+        width: 78.7188px;
+        height: 34px;
+        background-color: #45ADC5;
+        color: #fff
+    }
+    label .searchbox {
+        margin-left: 100px;
+        width: 229px;
+        height: 34px;
+        border: 1px solid #FBFBFA
+    }
+    .headright button {
+        width: 61.5938px;
+        height: 34px;
+        padding-right: 50px;
+        padding-left: 50px
+    }
+    .headright a {
+        padding-right: 50px;
+        padding-left: 50px
+    }
+    fieldset .logo {
+        display: inline;
+        background: #fff;
+        margin-left: 40px;
+        position: absolute
+    }
+    fieldset .headright {
+        float: right;
+        margin-right: 40px
+    }
+    .wrapper {
+        margin-top: 40px;
+        width: 245px;
+        /*  border:1px solid #E1E3DF;*/
 
-form {
-  margin-left:100px;
-  display:inline
-}
+        background: #FFF;
+        /* float: left; */
 
-label .submit {
-  width:78.7188px;
-  height:34px;
-  background-color:#45ADC5;
-  color:#fff
-}
+        position: absolute;
+        margin-left: 40px;
+    }
+    #results {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        color: #55556D;
+        font-weight: 600;
+        font-size: 13px
+    }
+    fieldset li {
+        line-height: 20px
+    }
+    .sidebar {
+        margin-left: 30px;
+        height: 360px;
+        width: 245px;
+        color: #54ACC7;
+        background: #FFF;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        position: relative;
+        overflow: inherit
+    }
+    #refine {
+        margin-top: 120px;
+        color: #55556D;
+        font-weight: 600
+    }
+    aside {
+        margin-top: 20px;
+        height: 680px;
+        width: 245px;
+        color: #54ACC7;
+        background: #FFF;
+        font-size: 14px;
+        text-align: left
+    }
+    h4 {
+        font: bold;
+        font-size: 10.5px;
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+    .RefineType input {
+        height: 18px;
+        width: 18px
+    }
+    .price input {
+        width: 72.984px;
+        height: 38px;
+        background: #f5f5f1;
+    }
+    .container {
+        width: 100%;
+        height: 100%
+    }
+    header {
+        background: #FFF;
+        margin-top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 80px
+    }
+    form {
+        margin-left: 100px;
+        display: inline
+    }
+    label .submit {
+        width: 78.7188px;
+        height: 34px;
+        background-color: #45ADC5;
+        color: #fff
+    }
+    label .searchbox {
+        margin-left: 100px;
+        width: 229px;
+        height: 34px;
+        border: 1px solid #FBFBFA
+    }
+    .headright button {
+        width: 61.5938px;
+        height: 34px;
+        padding-right: 50px;
+        padding-left: 50px
+    }
+    .headright a {
+        padding-right: 50px;
+        padding-left: 50px
+    }
+    fieldset .logo {
+        display: inline;
+        background: #fff;
+        margin-left: 40px;
+        position: absolute
+    }
+    fieldset .headright {
+        float: right;
+        margin-right: 40px
+    }
+    .wrapper {
+        margin-top: 40px;
+        width: 245px;
+        /*  border:1px solid #E1E3DF;*/
 
-label .searchbox {
-  margin-left:100px;
-  width:229px;
-  height:34px;
-  border:1px solid #FBFBFA
-}
+        background: #FFF;
+        /* float: left; */
 
-.headright button {
-  width:61.5938px;
-  height:34px;
-  padding-right:50px;
-  padding-left:50px
-}
-
-.headright a {
-  padding-right:50px;
-  padding-left:50px
-}
-
-fieldset .logo {
-  display:inline;
-  background:#fff;
-  margin-left:40px;
-  position:absolute
-}
-
-fieldset .headright {
-  float:right;
-  margin-right:40px
-}
-
-.wrapper {
-  margin-top:40px;
-  width:245px;
-/*  border:1px solid #E1E3DF;*/
-  background:#FFF;
-/* float: left; */
-  position:absolute;
-  margin-left:40px;
-}
-
-#results {
-  margin-top:20px;
-  margin-left:40px;
-  margin-bottom:10px;
-  color:#55556D;
-  font-weight:600;
-  font-size:13px
-}
-
-fieldset li {
-  line-height:20px
-}
-
-.sidebar {
-  margin-left:30px;
-  height:360px;
-  width:245px;
-  color:#54ACC7;
-  background:#FFF;
-  float:left;
-  text-align:left;
-  font-size:14px;
-  position:relative;
-  overflow:inherit
-}
-
-#refine {
-  margin-top:120px;
-  color:#55556D;
-  font-weight:600
-}
-
-aside {
-  margin-top:20px;
-  height:680px;
-  width:245px;
-  color:#54ACC7;
-  background:#FFF;
-  font-size:14px;
-  text-align:left
-}
-
-h4 {
-  font:bold;
-  font-size:10.5px;
-  padding-top:10px;
-  padding-bottom:10px
-}
-
-.RefineType input {
-  height:18px;
-  width:18px
-}
-
-.price input {
-  width:72.984px;
-  height:38px;
-  background:#f5f5f1;
-}
-
-.container {
-  width:100%;
-  height:100%
-}
-
-header {
-  background:#FFF;
-  margin-top:0;
-  overflow:hidden;
-  width:100%;
-  height:80px
-}
-
-form {
-  margin-left:100px;
-  display:inline
-}
-
-label .submit {
-  width:78.7188px;
-  height:34px;
-  background-color:#45ADC5;
-  color:#fff
-}
-
-label .searchbox {
-  margin-left:100px;
-  width:229px;
-  height:34px;
-  border:1px solid #FBFBFA
-}
-
-.headright button {
-  width:61.5938px;
-  height:34px;
-  padding-right:50px;
-  padding-left:50px
-}
-
-.headright a {
-  padding-right:50px;
-  padding-left:50px
-}
-
-fieldset .logo {
-  display:inline;
-  background:#fff;
-  margin-left:40px;
-  position:absolute
-}
-
-fieldset .headright {
-  float:right;
-  margin-right:40px
-}
-
-.wrapper {
-  margin-top:40px;
-  width:245px;
-/*  border:1px solid #E1E3DF;*/
-  background:#FFF;
-/* float: left; */
-  position:absolute;
-  margin-left:40px;
-  /* padding-left: 20px;
+        position: absolute;
+        margin-left: 40px;
+        /* padding-left: 20px;
   padding-right: 20px;*/
-}
-
-#results {
-  margin-top:20px;
-  margin-left:40px;
-  margin-bottom:10px;
-  color:#55556D;
-  font-weight:600;
-  font-size:13px
-}
-
-.sidebar {
-  margin-left:30px;
-  height:360px;
-  width:245px;
-  color:#54ACC7;
-  background:#FFF;
-  float:left;
-  text-align:left;
-  font-size:14px;
-  position:relative;
-  overflow:inherit
-}
-
-#refine {
-  margin-top:120px;
-  color:#55556D;
-  font-weight:600
-}
-
-aside {
-  margin-top:10px;
-  height:680px;
-  width:245px;
-  color:#54ACC7;
-  background:#FFF;
-  font-size:14px;
-  text-align:left
-}
-
-.RefineType input {
-  height:18px;
-  width:18px
-}
-
-.price input {
-  width:72.984px;
-  height:38px;
-  border-radius:3px
-}
-
-price button {
-  height:38px;
-  width:38px
-}
-
-.items {
-  height:170px;
-  width:214px
-}
-
-#colorbox {
-  width:194px;
-  height:80px
-}
-
-.color label .checkbox {
-  height:20px;
-  width:20px
-}
-
-.ordering label .checkbox {
-  height:20px;
-  width:20px
-}
-
-#colorbox {
-  height:22px;
-  width:22px
-}
-
-.location input {
-  height:18px;
-  width:18px
-}
-
-.shipping select {
-  width:219px;
-  height:38px
-}
-
-.price #price-submit {
-  height:38px;
-  width:38px
-}
-
-.items {
-  height:170px;
-  width:214px
-}
-
-#colorbox {
-  width:194px;
-  height:80px
-}
-
-.color label .checkbox {
-  height:20px;
-  width:20px
-}
-
-.ordering label .checkbox {
-  height:20px;
-  width:20px
-}
-
-#colorbox {
-  height:22px;
-  width:22px
-}
-
-.location input {
-  height:18px;
-  width:18px
-}
-
-.shipping select {
-  width:219px;
-  height:38px
+    }
+    #results {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        color: #55556D;
+        font-weight: 600;
+        font-size: 13px
+    }
+    .sidebar {
+        margin-left: 30px;
+        height: 360px;
+        width: 245px;
+        color: #54ACC7;
+        background: #FFF;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        position: relative;
+        overflow: inherit
+    }
+    #refine {
+        margin-top: 120px;
+        color: #55556D;
+        font-weight: 600
+    }
+    aside {
+        margin-top: 10px;
+        height: 680px;
+        width: 245px;
+        color: #54ACC7;
+        background: #FFF;
+        font-size: 14px;
+        text-align: left
+    }
+    .RefineType input {
+        height: 18px;
+        width: 18px
+    }
+    .price input {
+        width: 72.984px;
+        height: 38px;
+        border-radius: 3px
+    }
+    price button {
+        height: 38px;
+        width: 38px
+    }
+    .items {
+        height: 170px;
+        width: 214px
+    }
+    #colorbox {
+        width: 194px;
+        height: 80px
+    }
+    .color label .checkbox {
+        height: 20px;
+        width: 20px
+    }
+    .ordering label .checkbox {
+        height: 20px;
+        width: 20px
+    }
+    #colorbox {
+        height: 22px;
+        width: 22px
+    }
+    .location input {
+        height: 18px;
+        width: 18px
+    }
+    .shipping select {
+        width: 219px;
+        height: 38px
+    }
+    .price #price-submit {
+        height: 38px;
+        width: 38px
+    }
+    .items {
+        height: 170px;
+        width: 214px
+    }
+    #colorbox {
+        width: 194px;
+        height: 80px
+    }
+    .color label .checkbox {
+        height: 20px;
+        width: 20px
+    }
+    .ordering label .checkbox {
+        height: 20px;
+        width: 20px
+    }
+    #colorbox {
+        height: 22px;
+        width: 22px
+    }
+    .location input {
+        height: 18px;
+        width: 18px
+    }
+    .shipping select {
+        width: 219px;
+        height: 38px
+    }
 }
