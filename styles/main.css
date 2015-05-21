@@ -58,6 +58,7 @@ fieldset .headright {
   margin-right: 40px; }
 
 .wrapper {
+  margin-top: 40px;
   width: 245px;
   border: 1px solid #E1E3DF;
   color: #54ACC7;
@@ -76,13 +77,13 @@ fieldset .headright {
   display: block;
   float: left;
   text-align: left;
-  font-size: 11px; }
+  font-size: 14px; }
 
 aside {
   height: 655px;
   display: block;
   float: left;
-  font-size: 11px; }
+  font-size: 14px; }
 
 h4 {
   font: bold;
