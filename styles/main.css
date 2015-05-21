@@ -80,6 +80,12 @@ aside {
   border: 1px solid #E1E3DF;
   font-size: 11px; }
 
+h4 {
+  font-style: bold;
+  font-size: 10.5px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 .items {
   height: 170px;
   width: 214px; }
