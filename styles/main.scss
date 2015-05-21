@@ -6,19 +6,20 @@
 // }
 
 body {
-  background:#f5f5f1;
+  background:#f5f5f1
 }
 
 .container {
   width:100%;
-  height: 100%;
+  height:100%
 }
+
 header {
-  background:#FFFFFF;
+  background:#FFF;
   margin-top:0;
   overflow:hidden;
-  width: 1000px;
-   height:80px;
+  width:100%;
+  height:80px
 }
 
 form {
@@ -55,17 +56,16 @@ fieldset .logo {
   display:inline;
   background:#fff;
   margin-left:40px;
-  overflow:hidden;
-  float: left;
-  position: absolute;
+  position:absolute
 }
 
 fieldset .headright {
   float:right;
-  margin-right:40px;
+  margin-right:40px
 }
+
 .wrapper {
-  margin-top: 40px;
+  margin-top:40px;
   width:245px;
   border:1px solid #E1E3DF;
   color:#54ACC7;
@@ -79,9 +79,9 @@ fieldset .headright {
 }
 
 .sidebar {
-  // margin-left:100px;
+  //margin-left:100px;
   height:408px;
-  // width:245px;
+  //width:245px;
   color:#54ACC7;
   background:#FFF;
   display:block;
@@ -91,14 +91,14 @@ fieldset .headright {
 }
 
 aside {
-  // margin-left:100px;
+  //margin-left:100px;
   height:655px;
-  // // width:245px;
-  // color:#54ACC7;
-  // background:#FFF;
+  ////width:245px;
+  //color:#54ACC7;
+  //background:#FFF;
   display:block;
   float:left;
-  // border:1px solid #E1E3DF;
+  //border:1px solid #E1E3DF;
   font-size:14px
 }
 
@@ -108,6 +108,7 @@ h4 {
   padding-top:10px;
   padding-bottom:10px
 }
+
 .items {
   height:170px;
   width:214px
