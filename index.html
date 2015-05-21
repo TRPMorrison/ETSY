@@ -1,23 +1,15 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>ETSY</title>
-<link href="styles/vendor/normalize.css" rel="stylesheet">
-<link href="styles/main.css" rel="stylesheet">
 </head>
-
-
 <body>
 <div class="container">
-
 <header>
 <fieldset>
-<div class="logo">
-<img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png">
-</div>
-
-<form action="" method="post">
-<label for="searchbox"></label> <input id="searchbox" placeholder="Search for items or shops" type="text"> <input class="button" type="submit" value="Search"> <label for="browse"></label> <select name="Browse">
+<div class="logo"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png"></div>
+<form action="" method="post"><label for="searchbox"></label> <input id="searchbox" placeholder="Search for items or shops" type="text"> <input class="button" type="submit" value="Search"> <label for="browse"></label> <select name="Browse">
 <optgroup label="Browse">
 <option value="Browse">Browse</option>
 <option value="1">Option 1</option>
@@ -28,107 +20,55 @@
 <option value="6">Option 6</option>
 </optgroup>
 </select>
-
-
-<div class="headright">
-<a href="Register">Register</a>
-<button>Sign In</button>
-<img src="https://raw.githubusercontent.com/tiy-atl-js-q2-2015/Assignments/master/Assignment%2010%20*/assets/cart.png">Cart</div>
+<div class="headright"><a href="Register">Register</a> <button>Sign In</button> <img src="https://raw.githubusercontent.com/tiy-atl-js-q2-2015/Assignments/master/Assignment%2010%20*/assets/cart.png">Cart</div>
 </form>
+</fieldset>
 </header>
-
-
-<h4>Show Results For</h4>
-
+<section id="results">Show Results For</section>
+<!--   <h4>Show Results For</h4>-->
 <div class="sidebar">
-<div class="Item Type">
-<fieldset><label for="Item Type">Item Type</label>
+<div class="ItemType">
+<fieldset><label for="ItemType">Item Type</label>
 <ul type="none">
-<li><input type="radio" value="All Items">All Items</li>
-<li><input type="radio" value="Hand Made">Hand Made</li>
-<li><input type="radio" value="Vintage">Vintage</li>
-<li><input type="radio" value="Craft Supplies">Craft Supplies</li>
-All Categories
-Home & Living
-Art & Collectibles
-Weddings
-Clothing
-Jewelry
-Paper & Party Supplies
-Accessories
-Craft Supplies & Tools
-Bags & Purses
-Bath & Beauty
-Shoes
-Books, Movies & Music
-Electronics & Accessories
-Toys & Games
-Pet Supplies
-</ul>
-</fieldset>
-</div>
-
-
-<hr>
-
-<div class="categories">
-<h4>Categories</h4>
-<h4>Handmade</h4>
-<ul type="none">
-<li><a href="#Art">Art</a></li>
-<li><a href="#Jewelry">Jewelry</a></li>
-<li><a href="#Music">Music</a></li>
-<li><a href="#Paper%20Goods">Paper Goods</a></li>
-<li><a href="#Accessories">Accessories</a></li>
-<li><a href="#Cloting">Clothing</a></li>
-<li><a href="#Housewares">Housewares</a></li>
-<li><a href="#Children">Children</a></li>
-</ul>
-<h4>Vintage</h4>
-<ul type="none">
-<li><a href="#Collectibles">Collectibles</a></li>
-<li><a href="#Home%20Decor">Home Decor</a></li>
-<li><a href="#Jewlery">Jewelry</a></li>
-<li><a href="#Paper%20Ephemera">Paper Ephemera</a></li>
-</ul>
-<h4>Craft Supplies</h4>
-<ul type="none">
-<li><a href="#Commercial">Commercial</a></li>
-<li><a href="#Scrapbooking">Scrapbooking</a></li>
-<li><a href="#Fabic">Fabric</a></li>
-<li><a href="#Bead">Bead</a></li>
-</ul>
-</div>
-</div>
-
-
-
-<h4>Refine Your Search</h4>
-
+<li>All Categories</li>
+<li>Home &amp; Living</li>
+<li>Outdoor &amp; Gardening</li>
+<li>Plants</li>
+<li>Succulents &amp; Cacti</li>
+<li>Terrariums</li>
+<li>Flowers</li>
+<li>Herbs</li>
+<li>Fruit &amp; Vegetables</li>
+<li>Air Plants</li>
+<li>Plant Markers</li>
+<li>Bonsai &amp; Trees</li>
+<li>Ferns, Grasses &amp; Bamboo</li>
+<li>Plant Food &amp; Supplements</li>
+<li style="list-style: none; display: inline">
+<section id="refine">Refine Your Search</section>
+<!--
+ <h4>Refine Your Search</h4>-->
 <aside>
-<div class="Item Type">
-<fieldset><label for="Item Type">Item Type</label>
+<div class="RefineType">
+<fieldset><label for="RefineType">Item Type</label>
 <ul type="none">
+<li style="list-style: none"><br></li>
 <li><input type="radio" value="All Items">All Items</li>
 <li><input type="radio" value="Hand Made">Hand Made</li>
 <li><input type="radio" value="Vintage">Vintage</li>
 </ul>
 </fieldset>
 </div>
-
 <hr>
-
-<div class="price">Price Filter</section>
-<input placeholder="$min" type="text"> to <input placeholder="$max" type="text"></div>
-
+<br>
+<div class="price"><span>Price<br></span><br>
+<input placeholder="$ Low" type="text"> to <input placeholder="$ High" type="text"> <button class="price-submit"></button></div>
 <hr>
-
 <div class="color">
 <h4><label for="checkboxes">Filter by Color</label></h4>
 <label><input class="checkbox" name="colorbox" type="checkbox" value="red"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="orange"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="yellow"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="green"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="blue"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="purple"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="black"></label> <label><input class="checkbox" name="colorbox" type="checkbox" value="white"></label></div>
-
+<br>
 <hr>
-
 <div class="ordering">
 <h4><label for="checkboxes">Ordering Options</label></h4>
 <ul type="none">
@@ -137,10 +77,8 @@ Pet Supplies
 <li><label><input class="checkbox" name="checkbox" type="checkbox" value="Customizable"> Customizable</label></li>
 </ul>
 </div>
-
+<br>
 <hr>
-
-
 <div class="location">
 <h4>Shop Location</h4>
 <ul type="none">
@@ -149,18 +87,22 @@ Pet Supplies
 <li style="list-style: none"><span>Choose a custom location</span></li>
 </ul>
 </div>
-
+<br>
 <hr>
-
 <div class="shipping">
-<h6>Ships To</h6>
-<textarea placeholder="Choose country...">
-Choose country...
-</textarea>
- <datalist id="countries"></datalist>
-</div>
+<p>Ships To</p>
+<select name="location">
+<option value="US">United States</option>
+</select></div>
 </aside>
+<script src="scripts/vendor/jquery.min.js"></script> <script src="scripts/main.js"></script></li>
+</ul>
+</fieldset>
 </div>
+</div>
+</div>
+</body>
+</html>
 
 
 <!-- TIM'S NEWAPP TEMPLATE PLACEHOLDER <section>
