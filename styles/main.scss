@@ -9,6 +9,7 @@ section {
         @include span-columns(4);
     }
     header {
+        @include span-columns(2);
         background: #FFF;
         margin-top: 0;
         overflow: hidden;
