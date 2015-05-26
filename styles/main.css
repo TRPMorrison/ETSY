@@ -46,14 +46,14 @@ header {
         list-style: none;
         margin-bottom: 5px;
         text-decoration: none; }
-  .itemArea .listing {
+  .itemArea .listings {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-    .itemArea .listing:last-child {
+    .itemArea .listings:last-child {
       margin-right: 0; }
-    .itemArea .listing .item {
+    .itemArea .listings .item {
       width: 225px;
       height: 172px;
       float: left;
@@ -61,9 +61,9 @@ header {
       margin-right: 2.35765%;
       width: 31.76157%;
       margin-bottom: 10px; }
-      .itemArea .listing .item:last-child {
+      .itemArea .listings .item:last-child {
         margin-right: 0; }
-      .itemArea .listing .item:nth-child(3n) {
+      .itemArea .listings .item:nth-child(3n) {
         margin-right: 0; }
-      .itemArea .listing .item:nth-child(3n+1) {
+      .itemArea .listings .item:nth-child(3n+1) {
         clear: left; }
