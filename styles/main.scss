@@ -16,14 +16,49 @@ header {
     height: 75px;
     margin-bottom: 25px;
     background-color: white;
-    box-shadow: #D9D9D5;
-    // box-shadow: 0px 0px 10px rgba(176, 176, 176, 1);
+    box-shadow: 0px 0px 10px #D9D9D5;
+
+    form {
+        margin-left: 100px;
+        display: inline;
+    }
+    label .submit {
+        width: 78.7188px;
+        height: 34px;
+        background-color: #45ADC5;
+        color: #fff;
+            }
+    label .searchbox {
+        margin-left: 100px;
+        width: 229px;
+        height: 34px;
+        border: 1px solid #FBFBFA;
+    }
+    .headright button {
+        width: 61.5938px;
+        height: 34px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .headright a {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    fieldset .logo {
+        display: inline;
+        background: #fff;
+        margin-left: 40px;
+        position: absolute;
+    }
+    fieldset .headright {
+        float: right;
+        margin-right: 40px;
+    }
 }
 
 .container {
     width: 980px;
     margin: 0 auto;
-}
 
 .itemArea {
     @include outer-container;
@@ -45,10 +80,15 @@ header {
         @include span-columns(7);
 
         .item {
-            width: 225px;
+            width: 224px;
             height: 172px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             @include span-columns(4);
             @include omega(3n);
+            margin-top: 100px;
             margin-bottom: 10px;
         }
     }
@@ -57,14 +97,7 @@ header {
 
 
 
-// section {
-//     @include outer-container();
-//     .content {
-//         @include span-columns(8);
-//     }
-//     .sidebar {
-//         @include span-columns(4);
-//     }
+
 //     header {
 //         @include span-columns(2);
 //         background: #FFF;
