@@ -41,7 +41,7 @@ header {
             }
         }
     }
-    .listing {
+    .listings {
         @include span-columns(7);
 
         .item {
