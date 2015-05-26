@@ -2,12 +2,13 @@ $(document).ready(function() {
 
     var listItems = $('#listing');
          //console.log(listing.title);
+var listingItem = $('#item');
 
     var itemTitle,
     itemImage,
     itemPrice,
     itemCurrency,
-    itemHolder;
+    listingItem;
 
     etsyItems.forEach(function(item) {
       itemTitle = '<p>' + item.title + '</p>';
@@ -15,7 +16,8 @@ $(document).ready(function() {
       itemPrice='<p>' + item.price + '</p>';
       itemCurrency='<p>' + item.currency_code + '</p>';
 
-      itemHolder = '<li>' + itemTitle + itemImage + "$" + itemPrice + itemCurrency + '</li>';
-        etsyItems.append(itemHolder);
+      listingItem = '<li>' + itemTitle + itemImage + "$" + itemPrice + itemCurrency + '</li>';
+
+        listItems.append(listingItem);
     });
 });
