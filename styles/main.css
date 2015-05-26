@@ -11,6 +11,10 @@ body {
   margin: 0;
   padding: 0; }
 
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
 header {
   width: 100%;
   height: 75px;
@@ -47,10 +51,6 @@ header {
     float: right;
     margin-right: 40px; }
 
-.container {
-  width: 980px;
-  margin: 0 auto; }
-
 .itemArea {
   max-width: 68em;
   margin-left: auto;
@@ -79,14 +79,14 @@ header {
         list-style: none;
         margin-bottom: 5px;
         text-decoration: none; }
-  .itemArea .items {
+  .itemArea .listings {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%; }
-    .itemArea .items:last-child {
+    .itemArea .listings:last-child {
       margin-right: 0; }
-    .itemArea .items .item {
+    .itemArea .listings .item {
       width: 225px;
       height: 172px;
       float: left;
@@ -95,9 +95,9 @@ header {
       width: 31.76157%;
       margin-top: 100px;
       margin-bottom: 10px; }
-      .itemArea .items .item:last-child {
+      .itemArea .listings .item:last-child {
         margin-right: 0; }
-      .itemArea .items .item:nth-child(3n) {
+      .itemArea .listings .item:nth-child(3n) {
         margin-right: 0; }
-      .itemArea .items .item:nth-child(3n+1) {
+      .itemArea .listings .item:nth-child(3n+1) {
         clear: left; }
