@@ -12,10 +12,13 @@ body {
   padding: 0; }
 
 .container {
-  width: 980px;
+  width: 100%;
   margin: 0 auto; }
 
 header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -26,6 +29,10 @@ header {
   margin-bottom: 25px;
   background-color: white;
   box-shadow: 0px 0px 10px #D9D9D5; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
   header:last-child {
     margin-right: 0; }
   header form {
