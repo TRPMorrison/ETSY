@@ -13,12 +13,13 @@ body {
 
 .container {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0; }
 
 header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -27,8 +28,7 @@ header {
   height: 75px;
   margin-top: 0;
   margin-bottom: 25px;
-  background-color: white;
-  box-shadow: 0px 0px 10px #D9D9D5; }
+  background-color: white; }
   header::after {
     clear: both;
     content: "";
@@ -74,6 +74,8 @@ header {
     content: "";
     display: table; }
   .itemArea aside {
+    margin-top: 50px;
+    position: absolute;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -98,8 +100,8 @@ header {
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%;
-    width: 224.984px;
-    height: 172px; }
+    width: 100%;
+    margin-left: 300px; }
     .itemArea .listings:last-child {
       margin-right: 0; }
     .itemArea .listings .item {
@@ -107,12 +109,30 @@ header {
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
-      margin-top: 100px;
-      margin-bottom: 10px;
-      display: inline; }
+      display: inline;
+      clear: right;
+      margin-top: 10px;
+      margin-bottom: 10px; }
       .itemArea .listings .item:last-child {
         margin-right: 0; }
       .itemArea .listings .item:nth-child(3n) {
         margin-right: 0; }
       .itemArea .listings .item:nth-child(3n+1) {
         clear: left; }
+      .itemArea .listings .item .item:before {
+        content: "";
+        display: block; }
+        .itemArea .listings .item .item:before .item:after {
+          content: "";
+          display: block; }
+          .itemArea .listings .item .item:before .item:after img {
+            width: 224.984px;
+            height: 172px; }
+            .itemArea .listings .item .item:before .item:after img img:before {
+              content: "";
+              display: block;
+              clear: both; }
+              .itemArea .listings .item .item:before .item:after img img:before img:after {
+                content: "";
+                display: block;
+                clear: both; }

@@ -10,7 +10,7 @@ $(document).ready(function() {
         itemCurrency,
         listingItem;
 
-    etsyItems.forEach(function(item) {
+    etsyItems.results.forEach(function(item) {
         itemTitle = '<p>' + item.title + '</p>';
         itemImage = '<img src="' + item.url + '"/>';
         itemPrice = '<p>' + item.price + '</p>';
