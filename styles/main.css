@@ -97,18 +97,19 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%; }
+    width: 57.35098%;
+    width: 224.984px;
+    height: 172px; }
     .itemArea .listings:last-child {
       margin-right: 0; }
     .itemArea .listings .item {
-      width: 225px;
-      height: 172px;
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
       margin-top: 100px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      display: inline; }
       .itemArea .listings .item:last-child {
         margin-right: 0; }
       .itemArea .listings .item:nth-child(3n) {
