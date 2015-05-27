@@ -14,97 +14,131 @@ body {
 .container {
   width: 100%;
   margin: 0; }
-
-header {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
-  width: 100%;
-  height: 75px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  background-color: white; }
-  header::after {
-    clear: both;
-    content: "";
-    display: table; }
-  header:last-child {
-    margin-right: 0; }
-  header form {
-    margin-left: 100px;
-    display: inline; }
-  header label .submit {
-    width: 78.7188px;
-    height: 34px;
-    background-color: #45ADC5;
-    color: #fff; }
-  header label .searchbox {
-    margin-left: 100px;
-    width: 229px;
-    height: 34px;
-    border: 1px solid #FBFBFA; }
-  header .headright button {
-    width: 61.5938px;
-    height: 34px;
-    padding-right: 50px;
-    padding-left: 50px; }
-  header .headright a {
-    padding-right: 50px;
-    padding-left: 50px; }
-  header fieldset .logo {
-    display: inline;
-    background: #fff;
-    margin-left: 40px;
-    position: absolute; }
-  header fieldset .headright {
-    float: right;
-    margin-right: 40px; }
-
-.itemArea {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .itemArea::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .itemArea aside {
-    margin-top: 50px;
-    position: absolute;
+  .container header {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%; }
-    .itemArea aside:last-child {
+    width: 14.70196%;
+    width: 100%;
+    height: 80px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    background-color: white;
+    background: #FFF;
+    overflow: hidden;
+    box-shadow: #D9D9D5; }
+    .container header::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .container header:last-child {
       margin-right: 0; }
-    .itemArea aside ul {
-      margin: 0;
-      padding: 15px;
-      background-color: white;
-      border-radius: 5px;
-      padding-right: 10px;
-      padding-left: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-      .itemArea aside ul li {
-        list-style: none;
-        margin-bottom: 5px;
-        text-decoration: none; }
-  .itemArea .listings {
+    .container header form {
+      margin-left: 100px;
+      display: inline; }
+    .container header label .submit {
+      width: 78.7188px;
+      height: 34px;
+      background-color: #45ADC5;
+      color: #fff; }
+    .container header label .searchbox {
+      margin-left: 100px;
+      width: 229px;
+      height: 34px;
+      border: 1px solid #FBFBFA; }
+    .container header .headright button {
+      width: 61.5938px;
+      height: 34px;
+      padding-right: 50px;
+      padding-left: 50px; }
+    .container header .headright a {
+      padding-right: 50px;
+      padding-left: 50px; }
+    .container header fieldset .logo {
+      display: inline;
+      background: #fff;
+      margin-left: 40px;
+      position: absolute; }
+    .container header fieldset .headright {
+      float: right;
+      margin-right: 40px; }
+  .container .itemArea {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .container .itemArea::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .container .itemArea aside {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-top: 165px;
+      margin-left: 40px;
+      position: absolute;
+      height: 100px;
+      width: 245px;
+      color: #54ACC7;
+      background: #FFF;
+      font-size: 14px;
+      text-align: left; }
+      .container .itemArea aside:last-child {
+        margin-right: 0; }
+      .container .itemArea aside ul {
+        margin: 0;
+        padding: 15px;
+        background-color: white;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .container .itemArea aside ul li {
+          list-style: none;
+          margin-bottom: 5px;
+          text-decoration: none; }
+          .container .itemArea aside ul li .sidebar {
+            margin-left: 30px;
+            height: 60px;
+            width: 245px;
+            color: #54ACC7;
+            background: #FFF;
+            float: left;
+            text-align: left;
+            font-size: 14px;
+            position: relative; }
+            .container .itemArea aside ul li .sidebar h4 {
+              font: bold;
+              font-size: 10.5px;
+              padding-top: 5px;
+              padding-bottom: 5px; }
+              .container .itemArea aside ul li .sidebar h4 .RefineType input {
+                height: 18px;
+                width: 18px; }
+                .container .itemArea aside ul li .sidebar h4 .RefineType input .price input {
+                  width: 72.984px;
+                  height: 38px;
+                  background: #f5f5f1; }
+                  .container .itemArea aside ul li .sidebar h4 .RefineType input .price input .refineCats {
+                    margin-top: 120px;
+                    color: #55556D;
+                    font-weight: 600; }
+  .container .listings {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%;
     width: 100%;
-    margin-left: 300px; }
-    .itemArea .listings:last-child {
+    margin-left: 300px;
+    margin-top: 50px; }
+    .container .listings:last-child {
       margin-right: 0; }
-    .itemArea .listings .item {
+    .container .listings .item {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -113,26 +147,26 @@ header {
       clear: right;
       margin-top: 10px;
       margin-bottom: 10px; }
-      .itemArea .listings .item:last-child {
+      .container .listings .item:last-child {
         margin-right: 0; }
-      .itemArea .listings .item:nth-child(3n) {
+      .container .listings .item:nth-child(3n) {
         margin-right: 0; }
-      .itemArea .listings .item:nth-child(3n+1) {
+      .container .listings .item:nth-child(3n+1) {
         clear: left; }
-      .itemArea .listings .item .item:before {
+      .container .listings .item .item:before {
         content: "";
         display: block; }
-        .itemArea .listings .item .item:before .item:after {
+        .container .listings .item .item:before .item:after {
           content: "";
           display: block; }
-          .itemArea .listings .item .item:before .item:after img {
+          .container .listings .item .item:before .item:after img {
             width: 224.984px;
             height: 172px; }
-            .itemArea .listings .item .item:before .item:after img img:before {
+            .container .listings .item .item:before .item:after img img:before {
               content: "";
               display: block;
               clear: both; }
-              .itemArea .listings .item .item:before .item:after img img:before img:after {
+              .container .listings .item .item:before .item:after img img:before img:after {
                 content: "";
                 display: block;
                 clear: both; }
