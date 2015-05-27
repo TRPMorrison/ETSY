@@ -7,8 +7,13 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
     width: 100%;
     margin:0;
+=======
+    width: 980px;
+    margin: 0 auto;
+>>>>>>> CHANGED ORDER
 }
 
 header {
@@ -60,6 +65,10 @@ header {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> CHANGED ORDER
 .itemArea {
     @include outer-container;
     aside {
@@ -84,8 +93,12 @@ header {
     }
     .listings {
         @include span-columns(7);
+<<<<<<< HEAD
         width: 100%;
         margin-left: 300px;
+=======
+        @include outer-wrapper;
+>>>>>>> CHANGED ORDER
         .item {
             @include span-columns(4);
             display: inline;
