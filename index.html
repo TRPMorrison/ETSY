@@ -1,149 +1,250 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>ETSY</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/vendor/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <title>ETSY</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="styles/vendor/normalize.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <fieldset>
-                <div class="logo"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png"></div>
-                <form action="" method="post">
-                    <label for="searchbox"></label>
-                    <input id="searchbox" placeholder="Search for items or shops" type="text">
-                    <input class="button" type="submit" value="Search">
-                    <label for="browse"></label>
-                    <select name="Browse">
-                        <optgroup label="Browse">
-                            <option value="Browse">Browse</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                        </optgroup>
-                    </select>
-                    <div class="headright"><a href="Register">Register</a>
-                        <button>Sign In</button> <img src="https://raw.githubusercontent.com/tiy-atl-js-q2-2015/Assignments/master/Assignment%2010%20*/assets/cart.png">Cart</div>
-                </form>
-            </fieldset>
-        </header>
-        <div class="container">
-            <div class="itemArea">
-                <aside>
-                    <h4>Show Results For</h4>
-                    <div id="sidebar">
-                    <ul>
-                        <li>All Categories</li>
-                        <li><a href="#">Home &amp Living</a></li>
-                        <li><a href="#">Outdoor &amp Gardening</a></li>
-                        <li><a href="#">Plants</a></li>
-                        <li><a href="#">Succulents &amp Cacti</a></li>
-                        <li><a href="#">Terrariums</a></li>
-                        <li><a href="#">Flowers</a></li>
-                        <li><a href="#">Herbs</a></li>
-                        <li><a href="#">Fruit &amp Vegetables</a></li>
-                        <li><a href="#">Air Plants</a></li>
-                        <li><a href="#">Plant Markers</a></li>
-                        <li><a href="#">Bonsai &amp Trees</a></li>
-                        <li><a href="#">Ferns, Grasses &amp Bamboo</a></li>
-                        <li><a href="#">Plant Food &amp Supplements</a></li>
-                    </ul>
-                    </div>
-                    <h4>Refine Your Search</h4>
-                    <ul id="refineCats"></ul>
-                    <ul>
-                        <fieldset>
-                            <label for="RefineType">Item Type</label>
-                            <li style="list-style: none">
-                                <br>
-                            </li>
-                            <li>
-                                <input type="radio" value="All Items">All Items</li>
-                            <li>
-                                <input type="radio" value="Hand Made">Hand Made</li>
-                            <li>
-                                <input type="radio" value="Vintage">Vintage</li>
-                        </fieldset>
-                        <br>
-                        <div class="price"><span>Price<br></span>
-                            <br>
-                            <input placeholder="$ Low" type="text"> to
-                            <input placeholder="$ High" type="text">
-                            <button class="price-submit"></button>
-                        </div>
-                        <div class="color">
-                            <h4><label for="checkboxes">Filter by Color</label></h4>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="red">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="orange">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="yellow">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="green">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="blue">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="purple">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="black">
-                            </label>
-                            <label>
-                                <input class="checkbox" name="colorbox" type="checkbox" value="white">
-                            </label>
-                        </div>
-                        <br>
-                        <div class="ordering">
-                            <h4><label for="checkboxes">Ordering Options</label></h4>
-                            <ul type="none">
-                                <li>
-                                    <label>
-                                        <input class="checkbox" name="checkbox" type="checkbox" value="In Your Favorites">
-                                    </label> In Your Favorites</li>
-                                <li>
-                                    <label>
-                                        <input class="checkbox" name="checkbox" type="checkbox" value="Accepts Etsy Gift Cards">
-                                    </label> Accepts Etsy Gift Cards</li>
-                                <li>
-                                    <label>
-                                        <input class="checkbox" name="checkbox" type="checkbox" value="Customizable"> Customizable</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <br>
-                        <div class="location">
-                            <h4>Shop Location</h4>
-                            <ul type="none">
-                                <li>
-                                    <input name="location" type="radio" value="Anywhere">Anywhere</li>
-                                <li>
-                                    <input name="location" type="radio" value="United States">United States</li>
-                                <li style="list-style: none"><span>Choose a custom location</span></li>
-                            </ul>
-                        </div>
-                        <br>
-                        <hr>
-                        <div class="shipping">
-                            <p>Ships To</p>
-                            <select name="location">
-                                <option value="US">United States</option>
-                            </select>
-                        </div>
-                </aside>
-                <!--
+  <header>
+    <fieldset>
+      <div class="logo"><img src=
+      "https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png">
+      </div>
+
+
+      <form action="" method="post">
+        <label for="searchbox"></label> <input id="searchbox" placeholder=
+        "Search for items or shops" type="text"> <input class="button" type=
+        "submit" value="Search"> <label for="browse"></label> <select name=
+        "Browse">
+          <optgroup label="Browse">
+            <option value="Browse">
+              Browse
+            </option>
+
+            <option value="1">
+              Option 1
+            </option>
+
+            <option value="2">
+              Option 2
+            </option>
+
+            <option value="3">
+              Option 3
+            </option>
+
+            <option value="4">
+              Option 4
+            </option>
+
+            <option value="5">
+              Option 5
+            </option>
+
+            <option value="6">
+              Option 6
+            </option>
+          </optgroup>
+        </select>
+
+        <div class="headright">
+          <a href="Register">Register</a> <button>Sign In</button> <img src=
+          "https://raw.githubusercontent.com/tiy-atl-js-q2-2015/Assignments/master/Assignment%2010%20*/assets/cart.png">
+           Cart
+        </div>
+      </form>
+    </fieldset>
+  </header>
+
+
+  <div class="container">
+    <div class="wrapper1">
+     <h5>Show Results For</h5>
+      <div class="itemArea1">
+
+
+
+        <div id="sidebar1">
+          <ul>
+     <span>All Categories</span>
+
+            <li>
+              <a href="#">Home &amp; Living</a>
+            </li>
+
+
+            <li>
+              <a href="#">Outdoor &amp; Gardening</a>
+            </li>
+
+
+            <li>
+              <a href="#">Plants</a>
+            </li>
+
+
+            <li>
+              <a href="#">Succulents &amp; Cacti</a>
+            </li>
+
+
+            <li>
+              <a href="#">Terrariums</a>
+            </li>
+
+
+            <li>
+              <a href="#">Flowers</a>
+            </li>
+
+
+            <li>
+              <a href="#">Herbs</a>
+            </li>
+
+
+            <li>
+              <a href="#">Fruit &amp; Vegetables</a>
+            </li>
+
+
+            <li>
+              <a href="#">Air Plants</a>
+            </li>
+
+
+            <li>
+              <a href="#">Plant Markers</a>
+            </li>
+
+
+            <li>
+              <a href="#">Bonsai &amp; Trees</a>
+            </li>
+
+
+            <li>
+              <a href="#">Ferns, Grasses &amp; Bamboo</a>
+            </li>
+
+
+            <li>
+              <a href="#">Plant Food &amp; Supplements</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="wrapper2">
+    <h5>Refine Your Search</h5>
+
+
+    <div class="itemArea2">
+      <div id="sidebar2">
+        <div style="margin-left: 2em">
+          <fieldset>
+            <label for="RefineType"><span>Item Type</span></label>
+
+            <ul>
+              <li><input type="radio" value="All Items"> All Items</li>
+
+
+              <li><input type="radio" value="Hand Made"> Hand Made</li>
+
+
+              <li><input type="radio" value="Vintage"> Vintage</li>
+            </ul>
+          </fieldset>
+
+
+          <div class="price">
+            <span>Price<br></span><br>
+            <input placeholder="$ Low" type="text"> to <input placeholder=
+            "$ High" type="text"> <button class="price-submit"></button>
+          </div>
+
+
+          <div class="color">
+            <h4><label for="checkboxes"><span>Filter by Color</span></label>
+            </h4>
+            <label><input class="checkbox" name="colorbox" type="checkbox"
+            value="red"></label> <label><input class="checkbox" name="colorbox"
+            type="checkbox" value="orange"></label> <label><input class=
+            "checkbox" name="colorbox" type="checkbox" value="yellow"></label>
+            <label><input class="checkbox" name="colorbox" type="checkbox"
+            value="green"></label> <label><input class="checkbox" name=
+            "colorbox" type="checkbox" value="blue"></label>
+            <label><input class="checkbox" name="colorbox" type="checkbox"
+            value="purple"></label> <label><input class="checkbox" name=
+            "colorbox" type="checkbox" value="black"></label>
+            <label><input class="checkbox" name="colorbox" type="checkbox"
+            value="white"></label>
+          </div>
+
+
+          <div class="ordering">
+            <h4><label for="checkboxes"><span>Ordering Options</span></label>
+            </h4>
+
+
+            <ul type="none">
+              <li><label><input class="checkbox" name="checkbox" type=
+              "checkbox" value="In Your Favorites"></label> In Your
+              Favorites</li>
+
+
+              <li><label><input class="checkbox" name="checkbox" type=
+              "checkbox" value="Accepts Etsy Gift Cards"></label> Accepts Etsy
+              Gift Cards</li>
+
+
+              <li><label><input class="checkbox" name="checkbox" type=
+              "checkbox" value="Customizable"> Customizable</label>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="location">
+            <h4>Shop Location</h4>
+
+
+            <ul type="none">
+              <li><input name="location" type="radio" value="Anywhere">
+              Anywhere</li>
+
+
+              <li><input name="location" type="radio" value="United States">
+              United States</li>
+
+
+              <li style="list-style: none"><span>Choose a custom
+              location</span>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="shipping">
+            <p>Ships To</p>
+            <select name="location">
+              <option value="US">
+                United States
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
                     <div id="listings">
                     <ul id="item">
                         <li id="item"></li>
@@ -155,59 +256,238 @@
                         <li id="item"></li>
                         <li id="item"></li>
                     </ul> -->
-                <!-- </div> -->
-                <div class="listings">
-                    <div class="item"><img src="https://img0.etsystatic.com/000/0/5128590/il_340x270.186489872.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/000/0/5476190/il_340x270.327670720.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/000/0/6747686/il_340x270.319165344.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/010/1/6363338/il_340x270.468497858_94h8.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/012/0/5136120/il_340x270.437600326_nyzv.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/014/0/6660826/il_340x270.450413514_j3j8.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/020/0/7251671/il_340x270.484415062_848e.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/025/0/8938873/il_340x270.599400760_qp6s.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/030/0/8947703/il_340x270.543016962_frj8.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/034/0/7948857/il_340x270.619631538_1dxz.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/035/0/8894597/il_340x270.640709420_q7vq.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/040/0/5732189/il_340x270.635509950_lnct.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/043/0/6728015/il_340x270.631559916_1x5i.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/044/0/9342303/il_340x270.611336038_igyg.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/046/0/7627784/il_340x270.725765442_e7jo.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/046/0/9130353/il_340x270.734284930_kh0f.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/053/0/9854860/il_340x270.743853296_q74o.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/056/0/7574460/il_340x270.761507942_q812.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/060/0/7298591/il_340x270.766510414_rfpl.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/065/1/6153666/il_340x270.754476280_78ik.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/065/3/7313044/il_340x270.772447992_4wi9.jpg"></div>
-                    <div class="item"><img src="https://img0.etsystatic.com/068/0/10684499/il_340x270.765751262_4ld7.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/000/0/5249456/il_340x270.324489143.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/000/0/5589644/il_340x270.340932871.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/000/0/5996660/il_340x270.230291401.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/002/0/6906352/il_340x270.403172295_gkvk.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/011/0/6110682/il_340x270.443510645_qftb.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/014/0/5506564/il_340x270.439805451_3r7w.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/017/0/8812101/il_340x270.578332329_dg2n.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/019/0/8621937/il_340x270.509366429_2utl.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/031/0/8823525/il_340x270.645198773_jcul.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/031/0/9938388/il_340x270.647140693_kdlt.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/034/0/5450972/il_340x270.594071619_tgea.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/034/0/7105572/il_340x270.505379483_qkz4.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/038/0/7631035/il_340x270.639711667_6uk3.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/041/0/6771897/il_340x270.599231633_6z8m.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/045/0/8981316/il_340x270.730352449_d7ox.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/055/0/7528989/il_340x270.718760853_ibr9.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/055/0/7559987/il_340x270.745544901_kbn2.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/057/0/8747942/il_340x270.744073449_oca6.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/058/0/7791123/il_340x270.713746747_1rlz.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/059/0/6383779/il_340x270.728205213_k8q9.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/062/0/6562529/il_340x270.755180659_hg5s.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/062/1/9134739/il_340x270.772286803_qj1m.jpg"></div>
-                    <div class="item"><img src="https://img1.etsystatic.com/064/0/9585874/il_340x270.751512087_q8a0.jpg"></div>
-                </div>
-                <script src="scripts/vendor/jquery.min.js"></script>
-                <script src="scripts/main.js"></script>
-                <script src="scripts/listings.js"></script>
+  <!-- </div> -->
+
+
+  <div class="listings">
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/000/0/5128590/il_340x270.186489872.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/000/0/5476190/il_340x270.327670720.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/000/0/6747686/il_340x270.319165344.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/010/1/6363338/il_340x270.468497858_94h8.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/012/0/5136120/il_340x270.437600326_nyzv.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/014/0/6660826/il_340x270.450413514_j3j8.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/020/0/7251671/il_340x270.484415062_848e.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/025/0/8938873/il_340x270.599400760_qp6s.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/030/0/8947703/il_340x270.543016962_frj8.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/034/0/7948857/il_340x270.619631538_1dxz.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/035/0/8894597/il_340x270.640709420_q7vq.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/040/0/5732189/il_340x270.635509950_lnct.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/043/0/6728015/il_340x270.631559916_1x5i.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/044/0/9342303/il_340x270.611336038_igyg.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/046/0/7627784/il_340x270.725765442_e7jo.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/046/0/9130353/il_340x270.734284930_kh0f.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/053/0/9854860/il_340x270.743853296_q74o.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/056/0/7574460/il_340x270.761507942_q812.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/060/0/7298591/il_340x270.766510414_rfpl.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/065/1/6153666/il_340x270.754476280_78ik.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/065/3/7313044/il_340x270.772447992_4wi9.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img0.etsystatic.com/068/0/10684499/il_340x270.765751262_4ld7.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/000/0/5249456/il_340x270.324489143.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/000/0/5589644/il_340x270.340932871.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/000/0/5996660/il_340x270.230291401.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/002/0/6906352/il_340x270.403172295_gkvk.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/011/0/6110682/il_340x270.443510645_qftb.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/014/0/5506564/il_340x270.439805451_3r7w.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/017/0/8812101/il_340x270.578332329_dg2n.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/019/0/8621937/il_340x270.509366429_2utl.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/031/0/8823525/il_340x270.645198773_jcul.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/031/0/9938388/il_340x270.647140693_kdlt.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/034/0/5450972/il_340x270.594071619_tgea.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/034/0/7105572/il_340x270.505379483_qkz4.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/038/0/7631035/il_340x270.639711667_6uk3.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/041/0/6771897/il_340x270.599231633_6z8m.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/045/0/8981316/il_340x270.730352449_d7ox.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/055/0/7528989/il_340x270.718760853_ibr9.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/055/0/7559987/il_340x270.745544901_kbn2.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/057/0/8747942/il_340x270.744073449_oca6.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/058/0/7791123/il_340x270.713746747_1rlz.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/059/0/6383779/il_340x270.728205213_k8q9.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/062/0/6562529/il_340x270.755180659_hg5s.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/062/1/9134739/il_340x270.772286803_qj1m.jpg">
+    </div>
+
+
+    <div class="item"><img src=
+    "https://img1.etsystatic.com/064/0/9585874/il_340x270.751512087_q8a0.jpg">
+    </div>
+  </div>
+  </div>
+
+  <script src="scripts/vendor/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/listings.js"></script>
 </body>
-
-</html>
-
 </html>

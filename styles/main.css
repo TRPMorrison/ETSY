@@ -7,166 +7,260 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #F5F5F1;
-  margin: 0;
-  padding: 0; }
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #F5F5F1; }
 
 .container {
+  margin: 0;
   width: 100%;
-  margin: 0; }
-  .container header {
+  height: 100%; }
+
+header {
+  width: 100%;
+  height: 80px;
+  margin-top: 0;
+  background-color: #FFFFFF;
+  margin-bottom: 25px;
+  box-shadow: #D9D9D5; }
+  header form {
+    margin-left: 100px;
+    display: inline; }
+  header label .submit {
+    width: 78.7188px;
+    height: 34px;
+    background-color: #45ADC5;
+    color: #fff; }
+  header label .searchbox {
+    margin-left: 100px;
+    width: 229px;
+    height: 34px;
+    border: 1px solid #FBFBFA; }
+  header .headright button {
+    width: 61.5938px;
+    height: 34px;
+    padding-right: 50px;
+    padding-left: 50px; }
+  header .headright a {
+    padding-right: 50px;
+    padding-left: 50px; }
+  header fieldset .logo {
+    display: inline;
+    background: #fff;
+    margin-left: 40px;
+    position: absolute; }
+  header fieldset .headright {
+    float: right;
+    margin-right: 40px; }
+
+.wrapper1 {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  position: absolute;
+  width: 245px;
+  height: 408px;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  margin-left: 5.5em; }
+  .wrapper1::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wrapper1:last-child {
+    margin-right: 0; }
+  .wrapper1 h5 {
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    color: #464646;
+    display: block;
+    margin: 0;
+    font-size: 11pt; }
+  .wrapper1 .itemArea1 {
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    margin: 0 0 12px; }
+    .wrapper1 .itemArea1 .sidebar1 {
+      background: #FFF;
+      position: relative;
+      width: 219px;
+      height: 24px;
+      list-style: none; }
+    .wrapper1 .itemArea1 span {
+      font-weight: bold;
+      padding-top: 5px;
+      padding-bottom: 9px;
+      color: #464646;
+      display: block;
+      margin-left: -12px;
+      font-size: 13px; }
+    .wrapper1 .itemArea1 ul li {
+      list-style: none;
+      color: #54ACC7;
+      line-height: 1.4; }
+    .wrapper1 .itemArea1 a {
+      text-decoration: none;
+      color: #0192B5; }
+
+.wrapper2 {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  position: absolute;
+  margin-top: 30%;
+  width: 245px;
+  height: 655px;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  margin-left: 5.5em;
+  text-align: left; }
+  .wrapper2::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wrapper2:last-child {
+    margin-right: 0; }
+  .wrapper2 h5 {
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    color: #464646;
+    display: block;
+    margin: 0;
+    font-size: 11pt; }
+  .wrapper2 .itemArea2 {
+    border-radius: 3px;
+    background-color: #FFF;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    margin: 0 0 12px; }
+    .wrapper2 .itemArea2 .sidebar2 {
+      background: #FFF;
+      position: relative;
+      width: 219px;
+      height: 24px; }
+    .wrapper2 .itemArea2 span {
+      font-weight: bold;
+      padding-top: 5px;
+      color: #464646;
+      display: block;
+      margin-left: -12px;
+      font-size: 13px; }
+    .wrapper2 .itemArea2 ul li {
+      list-style: none;
+      color: #54ACC7;
+      line-height: 1.4;
+      font-size: 10pt;
+      margin-left: -10px; }
+    .wrapper2 .itemArea2 fieldset,
+    .wrapper2 .itemArea2 div,
+    .wrapper2 .itemArea2 p {
+      padding-top: 5px;
+      padding-bottom: 9px;
+      display: block;
+      margin: 0;
+      border-bottom: 1px solid #E1E3DF;
+      margin-left: -15px;
+      padding-left: 5px; }
+    .wrapper2 .itemArea2 h4,
+    .wrapper2 .itemArea2 span,
+    .wrapper2 .itemArea2 p {
+      font-weight: bold;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: #464646;
+      display: block;
+      margin: 0;
+      font-size: 10pt; }
+    .wrapper2 .itemArea2 .RefineType li {
+      margin-left: -10px; }
+      .wrapper2 .itemArea2 .RefineType li .RefineType input {
+        height: 18px;
+        width: 18px;
+        margin-left: -10px; }
+      .wrapper2 .itemArea2 .RefineType li .price input {
+        width: 72.984px;
+        height: 38px;
+        background: #f5f5f1;
+        color: #55556D;
+        font-weight: 600; }
+
+.listings {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: 375px;
+  margin-right: 0; }
+  .listings::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .listings:last-child {
+    margin-right: 0; }
+  .listings .item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    display: inline;
+    width: 245px;
+    height: 239px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .listings .item:last-child {
+      margin-right: 0; }
+    .listings .item:nth-child(3n) {
+      margin-right: 0; }
+    .listings .item:nth-child(3n+1) {
+      clear: left; }
+    .listings .item .item:before {
+      content: "";
+      display: block; }
+      .listings .item .item:before .item:after {
+        content: "";
+        display: block; }
+  .listings img {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 14.70196%;
-    width: 100%;
-    height: 80px;
-    margin-top: 0;
-    margin-bottom: 25px;
-    background-color: white;
-    background: #FFF;
-    overflow: hidden;
-    box-shadow: #D9D9D5; }
-    .container header::after {
+    width: 31.76157%;
+    width: 224.984px;
+    height: 172px;
+    margin-left: 10px;
+    margin-right: 5px; }
+    .listings img::after {
       clear: both;
       content: "";
       display: table; }
-    .container header:last-child {
+    .listings img:last-child {
       margin-right: 0; }
-    .container header form {
-      margin-left: 100px;
-      display: inline; }
-    .container header label .submit {
-      width: 78.7188px;
-      height: 34px;
-      background-color: #45ADC5;
-      color: #fff; }
-    .container header label .searchbox {
-      margin-left: 100px;
-      width: 229px;
-      height: 34px;
-      border: 1px solid #FBFBFA; }
-    .container header .headright button {
-      width: 61.5938px;
-      height: 34px;
-      padding-right: 50px;
-      padding-left: 50px; }
-    .container header .headright a {
-      padding-right: 50px;
-      padding-left: 50px; }
-    .container header fieldset .logo {
-      display: inline;
-      background: #fff;
-      margin-left: 40px;
-      position: absolute; }
-    .container header fieldset .headright {
-      float: right;
-      margin-right: 40px; }
-  .container .itemArea {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    .container .itemArea::after {
-      clear: both;
+    .listings img img:before {
       content: "";
-      display: table; }
-    .container .itemArea aside {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
-      margin-top: 165px;
-      margin-left: 40px;
-      position: absolute;
-      height: 100px;
-      width: 245px;
-      color: #54ACC7;
-      background: #FFF;
-      font-size: 14px;
-      text-align: left; }
-      .container .itemArea aside:last-child {
-        margin-right: 0; }
-      .container .itemArea aside ul {
-        margin: 0;
-        padding: 15px;
-        background-color: white;
-        border-radius: 5px;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px; }
-        .container .itemArea aside ul li {
-          list-style: none;
-          margin-bottom: 5px;
-          text-decoration: none; }
-          .container .itemArea aside ul li .sidebar {
-            margin-left: 30px;
-            height: 60px;
-            width: 245px;
-            color: #54ACC7;
-            background: #FFF;
-            float: left;
-            text-align: left;
-            font-size: 14px;
-            position: relative; }
-            .container .itemArea aside ul li .sidebar h4 {
-              font: bold;
-              font-size: 10.5px;
-              padding-top: 5px;
-              padding-bottom: 5px; }
-              .container .itemArea aside ul li .sidebar h4 .RefineType input {
-                height: 18px;
-                width: 18px; }
-                .container .itemArea aside ul li .sidebar h4 .RefineType input .price input {
-                  width: 72.984px;
-                  height: 38px;
-                  background: #f5f5f1; }
-                  .container .itemArea aside ul li .sidebar h4 .RefineType input .price input .refineCats {
-                    margin-top: 120px;
-                    color: #55556D;
-                    font-weight: 600; }
-  .container .listings {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
-    width: 100%;
-    margin-left: 300px;
-    margin-top: 50px; }
-    .container .listings:last-child {
-      margin-right: 0; }
-    .container .listings .item {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      display: inline;
-      clear: right;
-      margin-top: 10px;
-      margin-bottom: 10px; }
-      .container .listings .item:last-child {
-        margin-right: 0; }
-      .container .listings .item:nth-child(3n) {
-        margin-right: 0; }
-      .container .listings .item:nth-child(3n+1) {
-        clear: left; }
-      .container .listings .item .item:before {
+      display: block; }
+      .listings img img:before img:after {
         content: "";
         display: block; }
-        .container .listings .item .item:before .item:after {
-          content: "";
-          display: block; }
-          .container .listings .item .item:before .item:after img {
-            width: 224.984px;
-            height: 172px; }
-            .container .listings .item .item:before .item:after img img:before {
-              content: "";
-              display: block;
-              clear: both; }
-              .container .listings .item .item:before .item:after img img:before img:after {
-                content: "";
-                display: block;
-                clear: both; }
