@@ -6,18 +6,21 @@ html {
 *::before {
   box-sizing: inherit; }
 
+* {
+  border: 1px solid purple; }
+
 body {
   width: 100%;
   height: 100%;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
   line-height: 1.4;
   background-color: #F5F5F1; }
 
 .container {
   margin: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px; }
 
 header {
   width: 100%;
@@ -121,7 +124,7 @@ header {
   margin-right: 2.35765%;
   width: 23.23176%;
   position: absolute;
-  margin-top: 30%;
+  margin-top: 25%;
   width: 245px;
   height: 655px;
   padding: 12px;
@@ -200,67 +203,67 @@ header {
         font-weight: 600; }
 
 .listings {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  margin-left: 375px;
+  display: inline-block;
+  width: 70%;
+  margin-left: 300px;
   margin-right: 0; }
-  .listings::after {
-    clear: both;
-    content: "";
-    display: table; }
   .listings:last-child {
     margin-right: 0; }
-  .listings .item {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    display: inline;
-    width: 245px;
-    height: 239px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-    .listings .item:last-child {
-      margin-right: 0; }
-    .listings .item:nth-child(3n) {
-      margin-right: 0; }
-    .listings .item:nth-child(3n+1) {
-      clear: left; }
-    .listings .item .item:before {
+
+.listings li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  display: inline-block;
+  width: 224.984px;
+  height: 172px;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  margin-right: 60px; }
+  .listings li:last-child {
+    margin-right: 0; }
+  .listings li:nth-child(3n) {
+    margin-right: 0; }
+  .listings li:nth-child(3n+1) {
+    clear: left; }
+  .listings li .listings li:before {
+    content: "";
+    display: block; }
+    .listings li .listings li:before .listings li:after {
       content: "";
       display: block; }
-      .listings .item .item:before .item:after {
-        content: "";
-        display: block; }
-  .listings img {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    width: 224.984px;
-    height: 172px;
-    margin-left: 10px;
-    margin-right: 5px; }
-    .listings img::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .listings img:last-child {
-      margin-right: 0; }
-    .listings img img:before {
-      content: "";
-      display: block; }
-      .listings img img:before img:after {
-        content: "";
-        display: block; }
+
+#listing img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  width: 224.984px;
+  height: 172px;
+  margin-left: 10px;
+  margin-right: 5px; }
+  #listing img:last-child {
+    margin-right: 0; }
+  #listing img #listing img:before {
+    content: "";
+    display: block; }
+  #listing img #listing img:after {
+    content: "";
+    display: block; }
+
+#listing p {
+  height: 50px;
+  margin-top: 180px;
+  background-color: white;
+  font-size: 11pt;
+  color: #464646; }
+
+#listing span {
+  float: right;
+  color: #AAC347; }
