@@ -1,23 +1,27 @@
 $(document).ready(function() {
 
     var listItems = $('#listing');
-    //console.log(listing.title);
-    // var listingItem = $('#item');
-
+    var listingItems;
     var itemTitle,
         itemImage,
         itemPrice,
         itemCurrency,
-        listingItem;
+        listingItem,
+        urlImage;
 
-    etsyItems.results.forEach(function(item) {
+    listings.results.forEach(function(item) {
+        urlImage = item.Images[0].url_170x135;
+
         itemTitle = '<p>' + item.title + '</p>';
-        itemImage = '<img src="' + item.url + '"/>';
+
+        itemImage = '<a class="resultsImage"><img src="' + urlImage + '" /></a>';
+
         itemPrice = '<p>' + item.price + '</p>';
+
         itemCurrency = '<p>' + item.currency_code + '</p>';
 
-        listingItem = '<li>' + itemTitle + itemImage + "$" + itemPrice + itemCurrency + '</li>';
+        listingItems = '<li>' + itemTitle + itemImage + "$" + itemPrice + itemCurrency + '</li>';
 
-        listItems.append('#item');
+        listItems.append(listingItems);
     });
 });
